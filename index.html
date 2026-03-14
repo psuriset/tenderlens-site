@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TenderLens | AI Transparency Platform for Government Contracts</title>
+    <meta
+      name="description"
+      content="TenderLens ingests public procurement data, extracts contract intelligence, and flags anomalies across government tenders."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark">T</span>
+          <span class="brand-text">TenderLens</span>
+        </a>
+        <nav class="site-nav">
+          <a href="#product">Product</a>
+          <a href="#workflows">Workflows</a>
+          <a href="#buyers">Use cases</a>
+          <a href="#signals">Signals</a>
+          <a href="#moat">Data moat</a>
+          <a href="#demo">Book demo</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">AI transparency platform for government contracts</p>
+            <h1>See what public procurement data is hiding.</h1>
+            <p class="hero-text">
+              TenderLens turns tenders, contracts, procurement PDFs, company
+              records, and public disclosures into structured intelligence. It
+              helps investigators, journalists, compliance teams, and public
+              watchdogs detect anomalies before they become headlines.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#demo">Request a demo</a>
+              <a class="button button-secondary" href="#product">See platform</a>
+            </div>
+            <ul class="hero-points">
+              <li>Ingests GeM, CPPP, state portals, ministry sites, and PDFs</li>
+              <li>Flags vendor concentration, shared directors, and single-bid tenders</li>
+              <li>Summarizes 300-page contracts into obligations, payments, and risks</li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-story">
+              <p class="panel-label">Example insight</p>
+              <h2>Roads & Transport, 2024</h2>
+              <p class="panel-description">
+                ₹92,000 Cr in total contracts. TenderLens highlights 12
+                single-bid tenders, 3 vendor clusters sharing directors, and 7
+                awards issued within 24 hours of tender close.
+              </p>
+            </div>
+            <div class="panel-grid">
+              <article class="mini-card">
+                <span>Top vendor</span>
+                <strong>L&amp;T · ₹11,200 Cr</strong>
+              </article>
+              <article class="mini-card">
+                <span>Suspicious win rate</span>
+                <strong>ABC Infra · 89%</strong>
+              </article>
+              <article class="mini-card">
+                <span>Shared directors</span>
+                <strong>3 linked vendor entities</strong>
+              </article>
+              <article class="mini-card accent-card">
+                <span>Action</span>
+                <strong>Prioritize tenders for review in minutes</strong>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section highlight-strip">
+          <div class="highlight-card">
+            <span>Contract ingestion</span>
+            <strong>PDF to structured data</strong>
+            <p>
+              Extract `contract_id`, `vendor_name`, `vendor_directors`,
+              `project_value`, `department`, `date`, `tender_type`, and
+              `location`.
+            </p>
+          </div>
+          <div class="highlight-card">
+            <span>Anomaly detection</span>
+            <strong>AI flags patterns humans miss</strong>
+            <p>
+              Surface vendor concentration, related entities, low competition,
+              and timing anomalies across thousands of tenders.
+            </p>
+          </div>
+          <div class="highlight-card">
+            <span>Graph intelligence</span>
+            <strong>Relationships, not spreadsheets</strong>
+            <p>
+              Map vendor → director → company → department → contract and see
+              conflict patterns visually.
+            </p>
+          </div>
+        </section>
+
+        <section class="section problem-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Why now</p>
+            <h2>Procurement oversight still runs on fragmented portals, PDFs, and manual review.</h2>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card">
+              <strong>Fragmented sources</strong>
+              <p>
+                Tender data lives across national portals, state systems,
+                ministry pages, company registries, and scanned documents.
+              </p>
+            </article>
+            <article class="problem-card">
+              <strong>Unstructured evidence</strong>
+              <p>
+                Critical clauses and ownership signals are buried in PDFs,
+                corrigenda, annexures, and post-award modifications.
+              </p>
+            </article>
+            <article class="problem-card">
+              <strong>Slow investigation loops</strong>
+              <p>
+                Teams lose days cleaning records before they can even start
+                asking which tenders deserve scrutiny.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="product">
+          <div class="section-heading">
+            <p class="eyebrow">Core product</p>
+            <h2>Built for contract intelligence, not generic document search.</h2>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>Ingest public procurement data</h3>
+              <p>
+                Pull contracts and tender metadata from GeM, CPPP, state
+                procurement portals, ministry websites, RTI disclosures, and
+                project completion reports.
+              </p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>Extract structure from messy files</h3>
+              <p>
+                Use LLM-powered extraction on PDFs and tender documents to
+                convert unstructured records into queryable intelligence.
+              </p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>Detect anomalies with AI</h3>
+              <p>
+                Rank high-risk patterns across vendors, departments, bid timing,
+                bidder counts, and ownership links.
+              </p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">04</span>
+              <h3>Generate explainable outputs</h3>
+              <p>
+                Summarize obligations, penalty clauses, payment terms, risk
+                clauses, and produce visual graphs for rapid review.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section modules-section">
+          <div class="section-heading">
+            <p class="eyebrow">Platform modules</p>
+            <h2>One intelligence layer across ingestion, extraction, review, and alerts.</h2>
+          </div>
+          <div class="module-grid">
+            <article class="module-card">
+              <span>Module 01</span>
+              <h3>Source connectors</h3>
+              <p>Scheduled pulls from GeM, CPPP, state portals, ministry sites, and uploaded files.</p>
+            </article>
+            <article class="module-card">
+              <span>Module 02</span>
+              <h3>Contract extraction</h3>
+              <p>LLM-powered extraction converts tender PDFs and contracts into structured records.</p>
+            </article>
+            <article class="module-card">
+              <span>Module 03</span>
+              <h3>Anomaly scoring</h3>
+              <p>Rank vendors, tenders, and departments by suspicious patterns and review priority.</p>
+            </article>
+            <article class="module-card">
+              <span>Module 04</span>
+              <h3>Relationship graph</h3>
+              <p>Link directors, related vendors, contracts, and departments into one navigable map.</p>
+            </article>
+            <article class="module-card">
+              <span>Module 05</span>
+              <h3>Contract summarizer</h3>
+              <p>Surface obligations, payments, penalties, risk clauses, and exceptions in plain language.</p>
+            </article>
+            <article class="module-card">
+              <span>Module 06</span>
+              <h3>Case export</h3>
+              <p>Package flagged tenders, evidence trails, and findings for journalists, auditors, or legal review.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section workflow-section" id="workflows">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Example workflows</p>
+            <h2>From a raw tender file to an explainable case trail.</h2>
+          </div>
+          <div class="workflow-grid">
+            <article class="workflow-card">
+              <span class="workflow-tag">Workflow A</span>
+              <h3>Upload a 300-page contract</h3>
+              <p>TenderLens extracts entities, summarizes key clauses, and highlights obligations, payment schedules, and penalties.</p>
+            </article>
+            <article class="workflow-card">
+              <span class="workflow-tag">Workflow B</span>
+              <h3>Inspect a vendor cluster</h3>
+              <p>Search one company and uncover linked directors, related entities, departments, and awarded tenders.</p>
+            </article>
+            <article class="workflow-card">
+              <span class="workflow-tag">Workflow C</span>
+              <h3>Review anomaly feed</h3>
+              <p>Start with ranked cases: low-bid competition, concentration spikes, rushed awards, and ownership overlap.</p>
+            </article>
+            <article class="workflow-card">
+              <span class="workflow-tag">Workflow D</span>
+              <h3>Export findings</h3>
+              <p>Share evidence-backed summaries, risk notes, and procurement timelines with your wider team.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section signals-section" id="signals">
+          <div class="section-heading narrow">
+            <p class="eyebrow">What it detects</p>
+            <h2>Signals that matter in procurement review.</h2>
+          </div>
+          <div class="signal-layout">
+            <article class="signal-card warm">
+              <h3>Vendor concentration</h3>
+              <p>
+                Example: a single infrastructure vendor wins 47 contracts from
+                the same department worth ₹1,200 Cr with an 89% win rate.
+              </p>
+            </article>
+            <article class="signal-card cool">
+              <h3>Repeated directors</h3>
+              <p>
+                Vendor A and Vendor B share directors, addresses, or linked
+                entities. Potential shell company behavior becomes visible.
+              </p>
+            </article>
+            <article class="signal-card neutral">
+              <h3>Single-bid tenders</h3>
+              <p>
+                Highlight procurement events with low competition, late
+                participation, or last-minute bid behavior.
+              </p>
+            </article>
+            <article class="signal-card strong">
+              <h3>Timing anomalies</h3>
+              <p>
+                Detect awards made unusually fast after tender close, repeated
+                patterns in the same office, or contract amendments that spike
+                value later.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section dashboard-section">
+          <div class="section-heading">
+            <p class="eyebrow">Sample outputs</p>
+            <h2>What users actually see inside TenderLens.</h2>
+          </div>
+          <div class="dashboard-grid">
+            <article class="dashboard-card large">
+              <div class="dashboard-top">
+                <span>Ministry dashboard</span>
+                <strong>Roads & Transport · 2024</strong>
+              </div>
+              <ul class="metric-list">
+                <li><span>Total contracts</span><strong>₹92,000 Cr</strong></li>
+                <li><span>Single-bid tenders</span><strong>12</strong></li>
+                <li><span>Linked vendor clusters</span><strong>3</strong></li>
+                <li><span>Fast-turn awards</span><strong>7</strong></li>
+              </ul>
+            </article>
+            <article class="dashboard-card">
+              <div class="dashboard-top">
+                <span>Vendor profile</span>
+                <strong>ABC Infrastructure</strong>
+              </div>
+              <p>47 wins in one department · ₹1,200 Cr total value · 89% win rate</p>
+            </article>
+            <article class="dashboard-card">
+              <div class="dashboard-top">
+                <span>Contract summary</span>
+                <strong>Penalty & payment extraction</strong>
+              </div>
+              <p>Milestone payments, delay penalties, escalation clauses, and termination triggers in plain language.</p>
+            </article>
+            <article class="dashboard-card">
+              <div class="dashboard-top">
+                <span>Case note</span>
+                <strong>3 vendors share directors</strong>
+              </div>
+              <p>Evidence chain links MCA ownership, tender participation, and repeated awards in the same office.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section intelligence-section">
+          <div class="intelligence-copy">
+            <p class="eyebrow">Graph intelligence</p>
+            <h2>Turn procurement records into relationship maps.</h2>
+            <p>
+              TenderLens connects vendors, directors, companies, departments,
+              and awarded contracts into one explainable graph. Instead of
+              hunting across disconnected portals, investigators see clusters
+              immediately.
+            </p>
+          </div>
+          <div class="graph-card">
+            <div class="graph-node primary">ABC Infra</div>
+            <div class="graph-link"></div>
+            <div class="graph-node">Director: Rajesh Patel</div>
+            <div class="graph-link"></div>
+            <div class="graph-node">Patel Constructions</div>
+            <div class="graph-link"></div>
+            <div class="graph-node warning">Same department awards</div>
+          </div>
+        </section>
+
+        <section class="section buyers-section" id="buyers">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Who it is for</p>
+            <h2>Built for teams that need explainable procurement intelligence.</h2>
+          </div>
+          <div class="buyer-grid">
+            <article class="buyer-card">
+              <h3>Investigative journalism</h3>
+              <p>Move faster from tip, vendor name, or ministry to a documented pattern worth publishing.</p>
+            </article>
+            <article class="buyer-card">
+              <h3>Anti-corruption and civic tech groups</h3>
+              <p>Track allocation patterns, related entities, and procurement outliers across large public datasets.</p>
+            </article>
+            <article class="buyer-card">
+              <h3>Compliance and audit teams</h3>
+              <p>Review public-sector contract exposure, linked parties, and tender risk without manual spreadsheet work.</p>
+            </article>
+            <article class="buyer-card">
+              <h3>Oversight bodies and policy researchers</h3>
+              <p>Understand which departments, sectors, or procurement rules generate recurring anomalies over time.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="moat">
+          <div class="section-heading">
+            <p class="eyebrow">Data moat</p>
+            <h2>The value is in unifying fragmented public procurement data.</h2>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span class="step-number">Source</span>
+              <h3>Government tender systems</h3>
+              <p>
+                GeM, CPPP, and state portals provide the procurement substrate.
+              </p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">Source</span>
+              <h3>Company ownership data</h3>
+              <p>
+                MCA records help resolve directors, related companies, and
+                entity relationships.
+              </p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">Source</span>
+              <h3>Public disclosures</h3>
+              <p>
+                RTI releases, budget allocations, and completion reports enrich
+                context beyond the original tender notice.
+              </p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">Moat</span>
+              <h3>Unified intelligence layer</h3>
+              <p>
+                The defensibility comes from normalized data, anomaly scoring,
+                and contract graphing across fragmented sources.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section pilot-details-section">
+          <div class="section-heading">
+            <p class="eyebrow">Pilot structure</p>
+            <h2>Start narrow, prove signal quality, then expand coverage.</h2>
+          </div>
+          <div class="workflow-grid">
+            <article class="workflow-card">
+              <span class="workflow-tag">Scope</span>
+              <h3>One ministry, one state, or one vendor cluster</h3>
+              <p>Pick a tractable slice of procurement activity and build the first intelligence layer there.</p>
+            </article>
+            <article class="workflow-card">
+              <span class="workflow-tag">Timeline</span>
+              <h3>4 to 6 weeks</h3>
+              <p>Enough time to ingest records, normalize data, rank anomalies, and deliver review-ready outputs.</p>
+            </article>
+            <article class="workflow-card">
+              <span class="workflow-tag">Deliverables</span>
+              <h3>Dashboard, graph, and case shortlist</h3>
+              <p>Teams receive scored tenders, relationship maps, vendor summaries, and a repeatable monitoring setup.</p>
+            </article>
+            <article class="workflow-card">
+              <span class="workflow-tag">Outcome</span>
+              <h3>Faster review with stronger evidence trails</h3>
+              <p>The pilot proves whether TenderLens materially reduces the time from raw data to actionable review.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section faq-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions early buyers will ask.</h2>
+          </div>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>Does TenderLens claim corruption automatically?</h3>
+              <p>No. It ranks anomalies, linked patterns, and evidence trails so humans can investigate with context.</p>
+            </article>
+            <article class="faq-item">
+              <h3>What makes it different from simple OCR or contract search?</h3>
+              <p>TenderLens combines extraction, ownership resolution, graph intelligence, anomaly scoring, and explainable outputs.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Can it work with uploaded PDFs as well as portal data?</h3>
+              <p>Yes. The platform is designed for both portal ingestion and uploaded contracts, notices, annexures, and disclosures.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Why start in India?</h3>
+              <p>India has large public procurement volume, fragmented state and ministry portals, and a strong need for unified transparency tooling.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section demo-section" id="demo">
+          <div class="demo-copy">
+            <p class="eyebrow">Early access</p>
+            <h2>Built for investigators, journalists, compliance, and civic tech.</h2>
+            <p>
+              Start with a pilot across one ministry, one state, or one vendor
+              cluster. TenderLens helps teams move from raw contracts to
+              explainable procurement intelligence.
+            </p>
+          </div>
+          <div class="demo-panel">
+            <p class="demo-title">Ideal first users</p>
+            <ul class="demo-list">
+              <li>Investigative journalism teams</li>
+              <li>Public interest and transparency organizations</li>
+              <li>Anti-corruption and audit groups</li>
+              <li>Compliance teams reviewing public-sector exposure</li>
+            </ul>
+            <a class="button button-primary" href="mailto:hello@tenderlens.ai">Book a product demo</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
