@@ -260,12 +260,7 @@ body::after {
 .highlight-strip,
 .steps,
 .signal-layout,
-.problem-grid,
-.module-grid,
-.workflow-grid,
-.dashboard-grid,
-.buyer-grid,
-.faq-list {
+.buyer-grid {
   display: grid;
   gap: 1rem;
 }
@@ -292,39 +287,6 @@ body::after {
 
 .section {
   padding: 3rem 0;
-}
-
-.problem-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.problem-card,
-.module-card,
-.workflow-card,
-.dashboard-card,
-.buyer-card,
-.faq-item {
-  border: 1px solid var(--line);
-  background: var(--surface);
-  backdrop-filter: blur(14px);
-  box-shadow: var(--shadow);
-}
-
-.problem-card,
-.module-card,
-.workflow-card,
-.dashboard-card,
-.buyer-card,
-.faq-item {
-  padding: 1.35rem;
-  border-radius: var(--radius-lg);
-}
-
-.problem-card strong,
-.dashboard-top strong {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 0.55rem;
 }
 
 .highlight-strip {
@@ -363,32 +325,19 @@ body::after {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.module-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.buyer-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+  padding: 1.35rem;
+  border-radius: var(--radius-lg);
 }
 
-.module-card span,
-.workflow-tag,
-.dashboard-top span {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: var(--cyan);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.module-card h3,
-.workflow-card h3,
 .buyer-card h3,
-.faq-item h3 {
+.step-card h3 {
   margin: 0 0 0.7rem;
   font-size: 1.15rem;
-}
-
-.workflow-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .step-card {
@@ -414,40 +363,6 @@ body::after {
 
 .signal-layout {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.dashboard-grid {
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-}
-
-.dashboard-card.large {
-  grid-row: span 2;
-}
-
-.dashboard-top {
-  margin-bottom: 0.8rem;
-}
-
-.metric-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.metric-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.85rem 0;
-  border-top: 1px solid var(--line);
-}
-
-.metric-list li:first-child {
-  border-top: 0;
-}
-
-.metric-list span {
-  color: var(--muted);
 }
 
 .signal-card {
@@ -516,10 +431,6 @@ body::after {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.faq-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .demo-panel {
   padding: 1.5rem;
   border-radius: var(--radius-lg);
@@ -543,18 +454,13 @@ body::after {
   .intelligence-section,
   .demo-section,
   .steps,
-  .highlight-strip,
-  .problem-grid,
-  .module-grid,
-  .workflow-grid,
-  .dashboard-grid {
+  .highlight-strip {
     grid-template-columns: 1fr;
   }
 
   .panel-grid,
   .signal-layout,
-  .buyer-grid,
-  .faq-list {
+  .buyer-grid {
     grid-template-columns: 1fr;
   }
 }
